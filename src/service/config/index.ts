@@ -5,15 +5,16 @@ export class Config {
     conn: any
     constructor( tabela?: string ){
         this.table = tabela
+        this.connection()
+    }
+
+    connection(){
         this.conn = mysql.createConnection({
             database: env.DB.DB,
             user: env.DB.USERNAME,
             password: env.DB.PWD,
             host: env.DB.HOST
         })
-    }
-
-    connection(){
         return this.conn
     }
 }
