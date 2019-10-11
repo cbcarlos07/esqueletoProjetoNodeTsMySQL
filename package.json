@@ -1,0 +1,30 @@
+{
+  "name": "projetoNode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --watch \"src/\" --exec \"ts-node src/index.ts\" -e ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cbcarlos07/esqueletoProjetoNodeTsMySQL.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cbcarlos07/esqueletoProjetoNodeTsMySQL/issues"
+  },
+  "homepage": "https://github.com/cbcarlos07/esqueletoProjetoNodeTsMySQL#readme",
+  "devDependencies": {
+    "@types/restify": "^8.4.0",
+    "@types/socket.io": "^2.1.4",
+    "nodemon": "^1.19.3",
+    "restify": "^8.4.0",
+    "socket.io": "^2.3.0",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.4"
+  }
+}
