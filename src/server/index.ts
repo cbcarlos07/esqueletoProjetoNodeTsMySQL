@@ -1,7 +1,28 @@
 import * as restify from 'restify'
 import routes from '../routes'
-const server = restify.createServer()
+import { env } from '../environment'
+class Server {
+    server: any
+    port =  env.SERVER_PORT
+    constructor(){
+        this.server = restify.createServer()
+    }
 
-routes(server)
+    listen(){
+        this.routesConfig()
+        this.server.listen( this.port, () =>{
+            console.log(`Server is listening on port ${this.port}`);
+        })
+    }
 
-export default server
+    routesConfig(){
+        routes(this.server)
+
+    }
+
+
+}
+
+
+
+export const server = new Server()

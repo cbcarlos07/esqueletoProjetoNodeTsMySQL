@@ -1,7 +1,7 @@
 const env = {
     SERVER_PORT: 3000,
     DB: {
-        SERVER: 'localhost',
+        HOST: 'localhost',
         PORT: 3306,
         DB: 'produto',
         USERNAME: 'root',
