@@ -3,8 +3,8 @@ const env = {
     DB: {
         HOST: 'localhost',
         PORT: 3306,
-        DB: 'produto',
-        USERNAME: 'root',
+        DB: 'loja',
+        USERNAME: 'admin',
         PWD: '123'
     }
 }
